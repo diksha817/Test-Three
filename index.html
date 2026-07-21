@@ -13,3 +13,18 @@ Test Test Test Test Test Test Test Test
 Test Test Test Test Test Test Test Test
 Test Test Test Test Test Test Test Test
 Test Test Tmkdir imagesest Test Test Test Test Test
+
+
+
+
+function my_custom_shortcode() {
+    return '<h2>Welcome to My Website!</h2>';
+}
+
+add_shortcode( 'my_shortcode', 'my_custom_shortcode' );
+
+
+function new_shortcode() {
+    return 'test';
+}
+add_shortcode('custom_shortcode', 'new_shortcode')
